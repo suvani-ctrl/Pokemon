@@ -1,0 +1,121 @@
+body {
+  background-color: #001d30;
+  padding-top: 1260px; /* Adds space between the nav bar and the content */
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px; /* Reduced gap between cards */
+  padding: 20px;
+}
+
+.card {
+  background-color: #001d30;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 180px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px;
+  position: relative; /* Added position relative */
+  top: 80px; /* Example top value */
+}
+
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border: 2px solid black;
+  box-shadow: 0 0 15px black;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card-details {
+  padding: 6px;
+  text-align: center;
+  width: 100%;
+}
+
+.card-title {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin: 6px 0;
+  color: #fff; /* Changed to bright white */
+}
+
+.card-reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.card-reviews .total-reviews {
+  font-size: 0.8rem;
+  color: #ccc; /* Slightly lighter gray for better contrast */
+}
+
+.card-reviews svg {
+  color: #cc078a;
+  font-size: 1rem;
+}
+
+.card-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+.card-price .price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff; /* Changed to bright white */
+}
+
+.card-price del {
+  font-size: 0.9rem;
+  color: #ccc; /* Slightly lighter gray for better contrast */
+  margin-right: 5px;
+}
+
+.Bag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f30587;
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Bag:hover {
+  background-color: #e07a00;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    justify-content: center;
+  }
+
+  .card {
+    width: 160px;
+  }
+}

@@ -1,0 +1,74 @@
+/* Navigation Bar Styling */
+nav {
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    align-items: center;
+    position: relative;
+    padding: 20px 2rem; /* Padding on both sides for better spacing */
+    border-bottom: 2px solid #e07373; /* Border below the nav */
+    background-color: hsl(232, 88%, 20%); /* Dark background for the nav */
+    z-index: 999; /* Ensure the nav stays on top */
+}
+
+/* Search Input Field Styling */
+input {
+    padding: 12px 20px;
+    border: none;
+    background-color: #f7f6f6;
+    outline: none;
+    border-radius: 5px;
+    width: 14rem; /* Fixed width for input */
+    font-size: 14px; /* Font size for input */
+    color: #333; /* Input text color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: all 0.3s ease-in-out; /* Smooth transition for focus */
+}
+
+/* Input Focus Effect */
+input:focus {
+    background-color: #b6d4f0; /* Slightly change background on focus */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Add a glow effect */
+}
+
+/* Icons Container Styling */
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for Navigation Icons */
+.nav-icons {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-left: 2rem;
+    color: white; /* White color for the icons */
+    transition: transform 0.2s ease, color 0.3s ease; /* Animation for scaling and color */
+}
+
+/* Hover Effect for Icons */
+.nav-icons:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+    color: #ff8c00; /* Change icon color on hover */
+}
+
+/* Mobile responsiveness for small screens */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 2rem;
+    }
+
+    .profile-container {
+        margin-top: 15px; /* Add some space for mobile layout */
+        flex-direction: row;
+    }
+
+    input {
+        width: 12rem; /* Slightly reduce the width of the input on smaller screens */
+    }
+
+    .nav-icons {
+        margin-left: 1.5rem; /* Reduce space between icons on smaller screens */
+    }
+}

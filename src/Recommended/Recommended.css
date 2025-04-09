@@ -1,0 +1,79 @@
+/* Recommended.css */
+
+/* Apply global styling to body to ensure spacing */
+body {
+    margin: 100;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Style for the main container */
+.recommended-container {
+    text-align: center; /* Center the content */
+    margin-top: 20px;
+}
+
+/* Styling for the header (h2) */
+.recommended-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px; /* Add some space below the header */
+    color: #333; /* Darker text for the header */
+}
+
+/* Styling for the buttons container */
+.recommended-btns {
+    position: absolute;
+    top: 120px; /* Adjust this to control the vertical positioning */
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+  }
+  
+/* Styling for each button */
+.recommended-btns button {
+    padding: 10px 20px; /* Larger padding for bigger, more clickable buttons */
+    font-size: 1rem; /* Slightly larger text */
+    font-weight: bold;
+    text-transform: uppercase; /* Make the text uppercase */
+    background: linear-gradient(135deg, #050e5f, #02032a); /* Gradient background */
+    color: rgb(220, 0, 125);
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover and other effects */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Hover effect for buttons */
+.recommended-btns button:hover {
+    background: linear-gradient(135deg, #2a3fe0, #1f1465); /* Darker gradient on hover */
+    transform: scale(1.1); /* Slightly increase the size of the button */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+}
+
+/* Optional: Add specific styles for individual buttons */
+.btns {
+    background: linear-gradient(135deg, #0b365a, #04315f); /* Blue gradient for specific buttons */
+}
+
+.btns:hover {
+    background: linear-gradient(135deg, #042c55, #032042); /* Darker blue gradient when hovered */
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+/* Active state for buttons (when clicked) */
+.recommended-btns button:active {
+    transform: scale(1.05); /* Slightly shrink the button when pressed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Smaller shadow when pressed */
+}
+
+/* Add a focus effect when buttons are clicked */
+.recommended-btns button:focus {
+    outline: none; /* Remove default outline */
+    border: 2px solid #c00274; /* Orange border to indicate focus */
+}
